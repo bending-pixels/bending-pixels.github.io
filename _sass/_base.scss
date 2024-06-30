@@ -116,6 +116,7 @@ aside {
             &:focus {
                 color: white;
             }
+            margin-left: calc(50% - 36px);
         }
         .nav > li > a,
         .nav > li > a:focus {
@@ -142,6 +143,9 @@ aside {
                     color: $theme-primary;
                 }
             }
+        }
+        .navbar-center {
+            margin-left: calc(50% - 168px);
         }
     }
 }
