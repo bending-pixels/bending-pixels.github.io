@@ -1,0 +1,63 @@
+.stop img {
+    display: inline-block;
+    width: 176px;
+    margin: 0 auto;
+    margin-bottom: -6px;
+    padding: 1.5rem;
+    -webkit-filter: grayscale(100%);
+    -moz-filter:    grayscale(100%);
+    -ms-filter:     grayscale(100%);
+    -o-filter:      grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.stop img:hover {
+    filter: none;
+    cursor: pointer;
+}
+
+.carousel,
+.reverse {
+    overflow: hidden;
+    height: auto;
+    padding: 0;
+}
+
+.stop {
+    animation: carousel 60s linear infinite;
+    white-space: nowrap;
+    will-change: transform;
+
+}
+/*
+.stop:hover {
+    animation-play-state: paused;
+}
+*/
+@keyframes carousel {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(-100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes reverse {
+    0% {
+        transform: translateX(100);
+    }
+
+    50% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
